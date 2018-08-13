@@ -3,7 +3,7 @@
 * [前言](../README.md)
 * Chrome Extension 基础概念
   * [初识 Chrome Extension](./overview/index.md)
-  * [快速学习 Chrome Extensions](./overview/quickstart.md)
+  * [快速学习 Chrome Extension](./overview/quickstart.md)
 * Chrome Extension 入门基础
   * onmibox
   * webRequest
