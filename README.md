@@ -1,6 +1,8 @@
+# README
+
 ## 《Chrome Extension 入门指南》 小书介绍
 
-![](./images/logo_google_developers.png)
+![](.gitbook/assets/logo_google_developers.png)
 
 > 扩展程序由一些文件（包括 HTML、CSS、JavaScript、图片以及其他任何您需要的文件）经过 zip 打包得到，为 Google Chrome 浏览器增加功能。扩展程序本质上是网页，它们可以利用浏览器为网页提供的所有 API，例如 XMLHttpRequest、JSON、HTML5 等等。
 
@@ -16,16 +18,17 @@
 
 当你学完整个小册后，可以做到：
 
-- 深入理解 Chrome Extension 特性机制
-- 快速的开发一个 Chrome Extension
-- 熟悉 Chrome Extension 上线流程
+* 深入理解 Chrome Extension 特性机制
+* 快速的开发一个 Chrome Extension
+* 熟悉 Chrome Extension 上线流程
 
 ## 适宜人群
 
-- 具备 HTML，CSS，JavaScript 一定基础知识的开发人员
-- 希望掌握 Chrome Extension 开发知识的前端开发者
+* 具备 HTML，CSS，JavaScript 一定基础知识的开发人员
+* 希望掌握 Chrome Extension 开发知识的前端开发者
 
 ## 温馨提示
 
-- 建议使用 Node.js 8.x 以上版本
-- 所有的 [Demo](https://github.com/welearnmore/chrome-extension-demos) 都能在Github上找到
+* 建议使用 Node.js 8.x 以上版本
+* 所有的 [Demo](https://github.com/welearnmore/chrome-extension-demos) 都能在Github上找到
+
