@@ -1,4 +1,4 @@
-# README
+# 前言
 
 ## 《Chrome Extension 入门指南》 小书介绍
 
