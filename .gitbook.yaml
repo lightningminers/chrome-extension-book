@@ -6,7 +6,7 @@ root: ./doc/
 # (Relative to <root> directory)
 structure:
   readme:  README.md
-  summary: SUMMAY.md
+  summary: SUMMARY.md
 
 # Redirect urls to specific files (relative to the <root> directory)
 #redirects:
