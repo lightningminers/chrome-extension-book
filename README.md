@@ -1,8 +1,7 @@
 # 前言
 
-## 《Chrome Extension 入门指南》 小书介绍
-
 ![](./doc/images/logo_google_developers.png)
+
 
 > 扩展程序由一些文件（包括 HTML、CSS、JavaScript、图片以及其他任何您需要的文件）经过 zip 打包得到，为 Google Chrome 浏览器增加功能。扩展程序本质上是网页，它们可以利用浏览器为网页提供的所有 API，例如 XMLHttpRequest、JSON、HTML5 等等。
 
