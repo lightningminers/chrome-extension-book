@@ -34,7 +34,7 @@ background 权限很高，几乎可以使用[这里][Chrome Extension API]所有
 
 看上去 Popup 就是一个普通的HTML文件，它可以包含任何内容，比如：`HTML`，`CSS`，`JavaScript`，与普通网页唯一的区别是，它显示在浏览器的右上角，如图：
 
-![](../images/chap-01-06.png)
+![](../images/chap-02-02.png)
 
 你可以使用 Popup Actions 将图标放置在地址栏中，并且定义需要处理的页面事件，显而易见，在这里的处理，可以在 manifest.json 文件中配置完成。
 
@@ -58,7 +58,7 @@ background 权限很高，几乎可以使用[这里][Chrome Extension API]所有
 
 ### 运行结果
 
-![](../images/chap-01-07.png)
+![](../images/chap-02-03.png)
 
 ### 权限
 
@@ -110,7 +110,7 @@ background 权限很高，几乎可以使用[这里][Chrome Extension API]所有
 
 我们可以在 `content_scripts.js` 文件中随便写一个log，如：`console.log('icepy')`，然后运行一下，在控制台中，将得到如下的一行输出：如图：
 
-![](../images/chap-01-08.png)
+![](../images/chap-02-04.png)
 
 体验项目 [查看][content scripts folder]
 
