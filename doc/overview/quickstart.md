@@ -29,42 +29,6 @@ window.setTimeout(function() {
 
 background 权限很高，几乎可以使用[这里][Chrome Extension API]所有的 API。
 
-
-## 侧边栏按钮 popup
-
-看上去 Popup 就是一个普通的HTML文件，它可以包含任何内容，比如：`HTML`，`CSS`，`JavaScript`，与普通网页唯一的区别是，它显示在浏览器的右上角，如图：
-
-![](../images/chap-02-02.png)
-
-你可以使用 Popup Actions 将图标放置在地址栏中，并且定义需要处理的页面事件，显而易见，在这里的处理，可以在 manifest.json 文件中配置完成。
-
-现在，加载 [popup 文件夹][popup folder]，来开始学习吧。
-
-### 配置
-
-如果要开启 Popup 需在 manifest.json 文件中 [配置入口文件][popup config] 即可：
-
-```JavaScript
-{
-  "name": "我的popup扩展程序",
-  "version": "2.0",
-  "browser_action": {
-    "default_title": "popup action page",
-    "default_icon": "img/logo.png",
-    "default_popup": "popup.html"
-  }
-}
-```
-
-### 运行结果
-
-![](../images/chap-02-03.png)
-
-### 权限
-
-与 background 不同的是，它是一个可见的网页，因此可以理解为普通浏览器中的安全策略以及限制在这个运行环境中同样存在，并且可调用的 Chrome API 有与 background 不同，它是受限的。
-
-
 ## 注入页面脚本 Content Scripts
 
 `Content Scripts` 是运行在页面中的一段脚本（JavaScript文件），通过 Web DOM 接口，写在 Content Scripts 中的脚本可以读取Web页面中的任何元素内容，但它和真正的 `inject` 还有稍许区别，试想一下，如果我们在一个 React 应用程序中，想获取到 React 对象，以及任何原页面本身的脚本上下文，`Content Scripts` 并没有提供这样的能力，而是需要额外再注入一段脚本，这个脚本是由 `script` 标签创建的 JavaScript。
@@ -135,7 +99,7 @@ background 权限很高，几乎可以使用[这里][Chrome Extension API]所有
     "persistent": false
   },
   "permissions": [
-    "tabs", 
+    "tabs",
     "<all_urls>"
   ]
 }
@@ -163,6 +127,40 @@ console.log('icepy');
 ![](../images/chap-02-05.png)
 
 ![](../images/chap-02-06.png)
+
+## 侧边栏按钮 popup
+
+看上去 Popup 就是一个普通的HTML文件，它可以包含任何内容，比如：`HTML`，`CSS`，`JavaScript`，与普通网页唯一的区别是，它显示在浏览器的右上角，如图：
+
+![](../images/chap-02-02.png)
+
+你可以使用 Popup Actions 将图标放置在地址栏中，并且定义需要处理的页面事件，显而易见，在这里的处理，可以在 manifest.json 文件中配置完成。
+
+现在，加载 [popup 文件夹][popup folder]，来开始学习吧。
+
+### 配置
+
+如果要开启 Popup 需在 manifest.json 文件中 [配置入口文件][popup config] 即可：
+
+```JavaScript
+{
+  "name": "我的popup扩展程序",
+  "version": "2.0",
+  "browser_action": {
+    "default_title": "popup action page",
+    "default_icon": "img/logo.png",
+    "default_popup": "popup.html"
+  }
+}
+```
+
+### 运行结果
+
+![](../images/chap-02-03.png)
+
+### 权限
+
+与 background 不同的是，它是一个可见的网页，因此可以理解为普通浏览器中的安全策略以及限制在这个运行环境中同样存在，并且可调用的 Chrome API 有与 background 不同，它是受限的。
 
 
 ## 选项页 options page
