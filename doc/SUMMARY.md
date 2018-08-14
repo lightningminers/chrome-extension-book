@@ -5,7 +5,7 @@
   * [初识 Chrome Extension](./overview/index.md)
   * [快速学习 Chrome Extension](./overview/quickstart.md)
 * Chrome Extension 入门基础
-  * [omnibox - 定制你的搜索框](./basics/nmnibox.md)
+  * [omnibox - 定制你的搜索框](./basics/omnibox.md)
   * webRequest
   * Extension 通信机制
   * devtools
