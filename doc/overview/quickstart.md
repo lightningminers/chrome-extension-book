@@ -108,21 +108,86 @@ background 权限很高，几乎可以使用[这里][Chrome Extension API]所有
 
 ```
 
-我们可以在 `content_scripts.js` 文件中随便写一个log，如：`console.log('icepy')`，然后运行一下，在控制台中，将得到如下的一行输出：如图：
+我们可以在 `content_scripts.js` 文件中随便写一个log，如：`console.log('icepy')`，然后运行一下，我们可以体验项目 [查看][content scripts folder]，在控制台中，将得到如下的一行输出：如图：
 
 ![](../images/chap-02-04.png)
 
-体验项目 [查看][content scripts folder]
+
+### 动态注入 Content Scripts
+
+在某些场景下，我们可能需要动态的注入一段 Content Scripts，来触达我们的业务，这个时候这种方式就能很好的处理这个问题，我们主要利用了 `chrome.tabs.executeScript` 的能力来达到动态注入的目的。
+
+首先，我们需要先配置 manifest.json 文件，如：
+
+```javascript
+{
+  "version": "0.0.1",
+  "name": "welearnmore-dynamic_content_scripts",
+  "manifest_version": 2,
+  "description": "welearnmore",
+  "browser_action": {
+    "default_title": "welearnmore dynamic content scripts",
+    "default_icon": "img/logo.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs", 
+    "<all_urls>"
+  ]
+}
+
+```
+
+然后在 `background.js` 中，利用消息通信的机制，去打开一个tab，由 Popup 页面中的某个按钮来触发：
+
+```javascript
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
+  chrome.tabs.create({ url: 'https://icepy.me'}, function(tab){
+    chrome.tabs.executeScript(tab.id, {file: 'dynamic_content_scripts.js'});
+  });
+})
+```
+
+`dynamic_content_scripts.js` 随便写一个 log，如：
+
+```javascript
+console.log('icepy');
+```
+
+现在，我们可以体验项目 [查看][dynamic content scripts folder]，在你的 Chrome 浏览器中，如图：
+
+![](../images/chap-02-05.png)
+
+![](../images/chap-02-06.png)
 
 
-## 后台页面 options page
+## 选项页 options page
+
+为了让用户有地方可以设置你的 Extension 功能，因此你可能需要提供一个选项页面来让用户进行某些设置操作，我们可以很简单的在 manifest.json 文件中配置你的 Options page，如：
+
+```javascript
+
+{
+  "version": "0.0.1",
+  "name": "welearnmore-options_page",
+  "options_page": "option.html"
+}
+
+```
+
+大部分情况下，Options Page 和 Popup Page 几乎一样，Chrome Extension 给我们提供了一个运行环境，但是页面和交互，这就需要你利用好 Web 技术来完善它了，唯一和 Popup Page 的区别，可能就是 Options Page 场景，主要利用在用户设置某些操作上（复杂的）。
 
 -----
 
-[content scripts folder]: https://github.com/welearnmore/chrome-extension-demos/tree/master/content_scripts
+[content scripts folder]:https://github.com/welearnmore/chrome-extension-demos/tree/master/content_scripts
 [content scripts config]:https://github.com/welearnmore/chrome-extension-demos/tree/master/content_scripts/manifest.json
 [popup folder]: https://github.com/welearnmore/chrome-extension-demos/tree/master/popup
 [popup config]:https://github.com/welearnmore/chrome-extension-demos/tree/master/popup/manifest.json
-[Chrome Extension API]: https://developers.chrome.com/extensions/api_index
-[background folder]: https://github.com/welearnmore/chrome-extension-demos/tree/master/background
-[background config]: https://github.com/welearnmore/chrome-extension-demos/blob/master/background/manifest.json#L9-L11
+[Chrome Extension API]:https://developers.chrome.com/extensions/api_index
+[background folder]:https://github.com/welearnmore/chrome-extension-demos/tree/master/background
+[background config]:https://github.com/welearnmore/chrome-extension-demos/blob/master/background/manifest.json#L9-L11
+[dynamic content scripts folder]:https://github.com/welearnmore/chrome-extension-demos/tree/master/dynamic_content_scripts
