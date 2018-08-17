@@ -13,7 +13,7 @@
   * overridepage - 定制页面
 * Chrome Extension 高级 API
   * Cookies
-  * i18n
+  * [i18n - 国际化](./advanced/i18n.md)
   * 通信
 * 在 Google webStore 上线你的 Chrome Extension
   * 上线
