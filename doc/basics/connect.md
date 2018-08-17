@@ -30,6 +30,21 @@ chrome.runtime.sendMessage({
 })
 ```
 
+如果你想异步的回应，那么只需要 `return true` 在你的函数体中，如：
+
+```javascript
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {   
+  // request 问的人发过来的消息    
+  // sendResponse 将答发给问的人
+  http.get().then(() => {
+    sendResponse({});
+  });
+  return true;
+})
+
+```
+
 一般这种问答机制我们还需要额外加入一些处理过程，如：
 
 ```javaScript
@@ -43,6 +58,22 @@ chrome.runtime.sendMessage({
 * action 用于描述处理的 handler
 * args 是问的人发来的消息
 * id 属于幂等操作
+
+```javascript
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {   
+  const { action, args } = request;
+  switch (action){
+    case 'sync':
+        sendResponse({});
+      break;
+    case 'async':
+      http.get().then(() => {
+        sendResponse({});
+      })
+      return true;
+  }
+})
+```
 
 至于回答也是如此。
 
