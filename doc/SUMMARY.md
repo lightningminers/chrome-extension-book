@@ -11,10 +11,10 @@
   * storage - 存储用户数据
   * devtools - 定制开发者工具
   * overridepage - 定制页面
-* Chrome Extension 高级 API
-  * Cookies
+  * cookies
+* Chrome Extension 高级开发
   * [i18n - 国际化](./advanced/i18n.md)
-  * 通信
-* 在 Google webStore 上线你的 Chrome Extension
-  * 上线
-  * Chrome 用户不翻墙安装 Chrome Extension 方法
+  * [通信机制 - onMessage](./advanced/connect.md)
+* 在 Google Web Store 上线你的 Chrome Extension
+  * 上线 Web Store
+  * [Chrome 用户不翻墙安装 Chrome Extension 方法](./publish/install_with_gfw.md)
