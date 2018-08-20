@@ -38,3 +38,7 @@
 * 建议使用 Node.js 8.x 以上版本
 * 所有的 [Demo](https://github.com/welearnmore/chrome-extension-demos) 都能在Github上找到
 * 本小书的 [目录-SUMMARY](./doc/SUMMARY.md)
+
+## LICENSE
+
+GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007
