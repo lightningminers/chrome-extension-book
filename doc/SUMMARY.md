@@ -11,7 +11,7 @@
   * storage - 存储用户数据
   * devtools - 定制开发者工具
   * overridepage - 定制页面
-  * cookies
+  * [cookies - 操作 Cookie](./basics/cookies.md)
 * Chrome Extension 高级开发
   * [i18n - 国际化](./advanced/i18n.md)
   * [通信机制 - onMessage](./advanced/connect.md)
