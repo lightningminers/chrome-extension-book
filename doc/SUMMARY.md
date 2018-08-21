@@ -4,6 +4,8 @@
 * Chrome Extension 基础概念
   * [初识 Chrome Extension](./overview/index.md)
   * [快速学习 Chrome Extension](./overview/quickstart.md)
+  * notifications - 桌面通知
+  * contextMenus - 右键菜单
 * Chrome Extension 入门基础
   * [omnibox - 定制你的搜索框](./basics/omnibox.md)
   * [webRequest - 监控网络请求](./basics/webRequest.md)
@@ -12,6 +14,9 @@
   * devtools - 定制开发者工具
   * overridepage - 定制页面
   * [cookies - 操作 Cookie](./basics/cookies.md)
+  * downloads - 下载操作
+  * system - 系统信息
+  * history - 历史信息
 * Chrome Extension 高级开发
   * [i18n - 国际化](./advanced/i18n.md)
   * [通信机制 - onMessage](./advanced/connect.md)
