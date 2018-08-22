@@ -14,7 +14,7 @@
   * devtools - 定制开发者工具
   * overridepage - 定制页面
   * [cookies - 操作 Cookie](./basics/cookies.md)
-  * downloads - 下载操作
+  * [downloads - 下载操作](./basics/downloads.md)
   * system - 系统信息
   * history - 历史信息
 * Chrome Extension 高级开发

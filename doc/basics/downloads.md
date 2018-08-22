@@ -42,3 +42,45 @@ chrome.downloads.download(object options, function callback)
 - `uniquify` To avoid duplication, the filename is changed to include a counter before the filename extension.
 - `overwrite` The existing file will be overwritten with the new file.
 - `prompt` The user will be prompted with a file chooser dialog.
+
+现在让我们看一个例子，从 `魔兽世界` 官网下载一张图片：
+
+```javascript
+var down = document.getElementById("down");
+down.addEventListener("click", function(){
+  var options = {
+    url: "https://cms-origin.battlenet.com.cn/cms/blog_thumbnail/01/01ZMKLKV95ZM1532759670729.jpg",
+    filename: "wow.jpg",
+    conflictAction: "overwrite",
+    method: "GET",
+  };
+  chrome.downloads.download(options, function(){
+    
+  });
+})
+```
+
+如图：
+
+![](../images/chap-02-09.png)
+
+在下载的过程中，我们还可以 `暂停`，`取消`等：
+
+```javascript
+// 暂停
+chrome.downloads.pause(integer downloadId, function callback) 
+```
+
+```javascript
+// 取消
+chrome.downloads.cancel(integer downloadId, function callback) 
+```
+
+除了下载功能之外，我们还可以使用别的 `API`，如图：
+
+![](../images/chap-02-10.png)
+
+
+So，完整 demo 请查看 https://github.com/welearnmore/chrome-extension-demos/blob/master/downloads
+
+
