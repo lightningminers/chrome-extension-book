@@ -9,7 +9,6 @@
 * Chrome Extension 入门基础
   * [omnibox - 定制你的搜索框](./basics/omnibox.md)
   * [webRequest - 监控网络请求](./basics/webRequest.md)
-  * proxy 代理
   * [storage - 存储用户数据](./basics/storage.md)
   * devtools - 定制开发者工具
   * [overridepage - 定制页面和设置](./basics/override.md)
