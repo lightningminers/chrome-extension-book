@@ -12,7 +12,7 @@
   * proxy 代理
   * [storage - 存储用户数据](./basics/storage.md)
   * devtools - 定制开发者工具
-  * [overridepage - 定制页面](./basics/override.md)
+  * [overridepage - 定制页面和设置](./basics/override.md)
   * [cookies - 操作 Cookie](./basics/cookies.md)
   * [downloads - 下载操作](./basics/downloads.md)
   * system - 系统信息
