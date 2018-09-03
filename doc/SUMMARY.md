@@ -22,3 +22,4 @@
 * 在 Google Web Store 上线
   * 上线 Web Store
   * [Chrome 用户不翻墙安装 Chrome Extension 方法](./publish/install_with_gfw.md)
+* [尾声](./end/index.md)
