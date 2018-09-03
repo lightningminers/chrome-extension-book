@@ -1,0 +1,1 @@
+这一章都会围绕着 [manifest.json](https://developer.chrome.com/extensions/manifest) 来展开，介绍 Chrome Extension 开发中它的作用。

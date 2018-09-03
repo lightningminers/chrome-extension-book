@@ -1,0 +1,1 @@
+本章都将围绕 [Extension API](https://developers.chrome.com/extensions/api_index) 展开，使用 API 时都需要在 [permissions](https://developer.chrome.com/extensions/declare_permissions) 中声明才能使用。

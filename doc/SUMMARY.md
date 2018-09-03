@@ -1,21 +1,21 @@
 # 目录
 
 * [前言](../README.md)
-* Chrome Extension 基础概念
-  * [初识 Chrome Extension](./overview/index.md)
+* [Chrome Extension 开发概述](./overview/index.md)
+  * [初识 Chrome Extension](./overview/first.md)
   * [快速学习 Chrome Extension](./overview/quickstart.md)
-* Chrome Extension 入门基础
+* [manifest.json 配置](./basics/index.md)
   * [omnibox - 定制你的搜索框](./basics/omnibox.md)
-  * [webRequest - 监控网络请求](./basics/webRequest.md)
-  * [storage - 存储用户数据](./basics/storage.md)
-  * devtools - 定制开发者工具
   * [overridepage - 定制页面和设置](./basics/override.md)
-  * [cookies - 操作 Cookie](./basics/cookies.md)
   * [downloads - 下载操作](./basics/downloads.md)
+  * contextMenus - 右键菜单
+  * devtools - 定制开发者工具
   * system - 系统信息
   * notifications - 桌面通知
-  * contextMenus - 右键菜单
-* Chrome Extension 高级开发
+* [API 使用](./advanced/index.md)
+  * [cookies - 操作 Cookie](./advanced/cookies.md)
+  * [webRequest - 监控网络请求](./advanced/webRequest.md)
+  * [storage - 存储用户数据](./advanced/storage.md)
   * [i18n - 国际化](./advanced/i18n.md)
   * [通信机制 - onMessage](./advanced/connect.md)
   * [跨应用进程通信 - NativeMessage](./advanced/nativemessage.md)
