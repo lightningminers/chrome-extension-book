@@ -10,7 +10,6 @@
   * [downloads - 下载操作](./basics/downloads.md)
   * contextMenus - 右键菜单
   * devtools - 定制开发者工具
-  * system - 系统信息
   * notifications - 桌面通知
 * [API 使用](./advanced/index.md)
   * [cookies - 操作 Cookie](./advanced/cookies.md)
