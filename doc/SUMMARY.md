@@ -8,7 +8,7 @@
   * [omnibox - 定制你的搜索框](./basics/omnibox.md)
   * [overridepage - 定制页面和设置](./basics/override.md)
   * [downloads - 下载操作](./basics/downloads.md)
-  * contextMenus - 右键菜单
+  * [contextMenus - 右键菜单](./basics/contextMenus.md)
   * devtools - 定制开发者工具
   * notifications - 桌面通知
 * [API 使用](./advanced/index.md)
