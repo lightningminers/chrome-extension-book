@@ -14,7 +14,7 @@
 
 ## 作者介绍
 
-[icepy](https://github.com/icepy)，`写写代码，做做烹饪，炒炒数字币，狂野摩托车骑行爱好者`，前远光，携程，阿里巴巴程序员，经历了从网页开发到前端开发再到大前端的技术变革，在 Hybrid，工程化，Weex，Node.js，Golang 等方面有着丰富的实战经验，喜爱折腾各种开发工具来提高开发效率，期望做一个永远都写代码的程序员；
+[icepy](https://github.com/icepy)，可访问：[https://icepy.me/](https://icepy.me/) 阅读。
 
 [一波不是一波](https://github.com/riskers)，先后在 360、阿里做过前端开发，信奉`自己是工程师，其次才是前端工程师`，现在主要做前端工作，擅长 React 技术栈，也正在往全端方向走；
 
