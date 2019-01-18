@@ -18,7 +18,7 @@
 
 [一波不是一波](https://github.com/riskers)，先后在 360、阿里做过前端开发，信奉`自己是工程师，其次才是前端工程师`，现在主要做前端工作，擅长 React 技术栈，也正在往全端方向走；
 
-[知乎专栏：《我们可以学习更多》](https://zhuanlan.zhihu.com/fed-talk) ，混乱的头脑风暴中....探索前端技术的奥秘；
+[知乎专栏：《我们可以学习更多》](https://zhuanlan.zhihu.com/fed-talk) ，程序员的前端专栏；
 
 ## 你会学到什么
 
