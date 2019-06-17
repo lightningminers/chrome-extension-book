@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "welearn-filesystem",
+  "icons": {
+    "128": "./img/logo.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "permissions": [
+    {
+      "fileSystem": ["write", "directory"]
+    }
+  ]
+}

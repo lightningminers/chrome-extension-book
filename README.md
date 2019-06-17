@@ -8,7 +8,7 @@
 作为 Google Chrome 生态的一部分，Extension 是可以修改或增强 Chrome 浏览器功能的小程序，开发者可以利用各种Web技术，提供各种有趣的功能。截至目前为止（2018/08/10），Chrome 的全球下载安装量稳居第一，其 Chrome Web Store 中的 Extension 更是海量，这极大的稳固了 Chrome 在全球市场上的地位，平时我们会用到各式各样的 Extension ，如：`纸壁（每天将 Chrome 启动界面换一张风景优美的图片），tabs管理器（将tab合并后管理），数字货币钱包（ETH钱包）`，这些 Extension 不仅扩充了 Chrome 本身的内涵，也极大的提高了用户（使用者）的某些效率，而这本小书，正是想将 Chrome Extension 的开发知识用文字的方式记录下来，提供给对此感兴趣的开发者。
 
 - 本书已经发布到[gitbook](https://welearnmore.gitbook.io/chrome-extension-book/)
-- 本书配套的[demos](https://github.com/welearnmore/chrome-extension-demos)
+- 本书配套的[demos](./chrome-extension-demos)
 - 加入[gitter](https://gitter.im/welearnmore123/chrome-extension?utm_source=share-link&utm_medium=link&utm_campaign=share-link)和我们交流
 
 
@@ -36,7 +36,7 @@
 ## 温馨提示
 
 * 建议使用 Node.js 8.x 以上版本
-* 所有的 [Demo](https://github.com/welearnmore/chrome-extension-demos) 都能在Github上找到
+* 所有的 [Demo](./chrome-extension-demos) 都能在Github上找到
 * 本小书的 [目录-SUMMARY](./doc/SUMMARY.md)
 
 ## LICENSE

@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "name": "welearnmore-webrequest",
+  "manifest_version": 2,
+  "description": "welearnmore",
+  "browser_action": {
+    "default_title": "welearnmore"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "16": "img/logo.png",
+    "48": "img/logo.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}

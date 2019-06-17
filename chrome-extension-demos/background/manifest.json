@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "name": "welearnmore-background",
+  "manifest_version": 2,
+  "description": "welearnmore",
+  "browser_action": {
+    "default_title": "welearnmore"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "img/logo.png",
+    "48": "img/logo.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}

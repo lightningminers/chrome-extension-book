@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "name": "welearnmore-dynamic_content_scripts",
+  "manifest_version": 2,
+  "description": "welearnmore",
+  "browser_action": {
+    "default_title": "welearnmore dynamic content scripts",
+    "default_icon": "img/logo.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs", 
+    "<all_urls>"
+  ]
+}

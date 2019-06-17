@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "name": "welearnmore-contextMenus",
+  "manifest_version": 2,
+  "description": "welearnmore",
+  "browser_action": {
+    "default_title": "welearnmore"
+  },
+  "icons": {
+    "16": "img/logo.png",
+    "48": "img/logo.png"
+  },
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}

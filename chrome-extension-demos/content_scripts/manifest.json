@@ -1,0 +1,13 @@
+{
+  "version": "0.0.1",
+  "name": "welearnmore-content_scripts",
+  "manifest_version": 2,
+  "description": "welearnmore",
+  "content_scripts": [
+    {
+      "matches": ["https://icepy.me/*"],
+      "js": ["content_scripts.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}

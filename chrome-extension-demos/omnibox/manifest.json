@@ -1,0 +1,24 @@
+{
+  "version": "0.0.1",
+  "name": "welearnmore-nomibox",
+  "manifest_version": 2,
+  "description": "welearnmore",
+  "browser_action": {
+    "default_title": "welearnmore"
+  },
+  "icons": {
+    "16": "img/logo.png",
+    "48": "img/logo.png"
+  },
+  "omnibox": {
+    "keyword": "book"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "https://book.douban.com/"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+}

@@ -1,0 +1,31 @@
+{
+  "version": "0.0.1",
+  "name": "welearnmore-override",
+  "manifest_version": 2,
+  "description": "welearnmore",
+  "browser_action": {
+    "default_title": "welearnmore"
+  },
+  "icons": {
+    "16": "img/logo.png",
+    "48": "img/logo.png"
+  },
+  "chrome_settings_overrides": {
+    "homepage": "https://welearnmore.gitbook.io/chrome-extension-book/",
+    "search_provider": {
+      "encoding": "UTF-8",
+      "favicon_url": "https://www.baidu.com/favicon.ico",
+      "is_default": true,
+      "keyword": "baidu.com",
+      "name": "baidu",
+      "search_url": "https://baidu.com/?q={searchTerms}"
+   }
+  },
+  "chrome_url_overrides": {
+    "bookmarks": "bookmarks.html"
+  },
+  "permissions": [
+    "bookmarks"
+  ],
+  "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net; object-src 'self';"
+}
